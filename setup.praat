@@ -1,5 +1,5 @@
 # LICENSE
-# (C) 2021 José María Lahoz-Bengoechea
+# (C) 2022 José María Lahoz-Bengoechea
 # This file is part of the plugin_AdvancedQuery.
 # This is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License
@@ -32,3 +32,6 @@ Add menu command... "TextGridEditor" "Pitch" "Get pitch range (st)" "" 0 Get pit
 Add menu command... "Objects" "Praat" "Octave calculator..." "Goodies" 1 Octave calculator.praat
 Add menu command... "SoundEditor" "Pitch" "Octave calculator..." "" 0 Octave calculator.praat
 Add menu command... "TextGridEditor" "Pitch" "Octave calculator..." "" 0 Octave calculator.praat
+Add action command... Sound 1 "" 0 "" 0 "Get jitter & shimmer..." "Autocorrelate..." 1 Get jitter & shimmer (Objects).praat
+Add menu command... "SoundEditor" "Pulses" "Get jitter & shimmer..." "" 0 Get jitter & shimmer.praat
+Add menu command... "TextGridEditor" "Pulses" "Get jitter & shimmer..." "" 0 Get jitter & shimmer.praat

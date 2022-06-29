@@ -20,7 +20,7 @@
 # This script gets the amplitude value of a wave at cursor position (or the mean if a portion is selected).
 # This is an Editor script.
 
-include utils.praat
+include auxiliary.praat
 
 ini = Get start of selection
 end = Get end of selection

@@ -20,7 +20,7 @@
 # This script calculates the COG of a selection.
 # This is an Editor script.
 
-include utils.praat
+include auxiliary.praat
 
 ini = Get start of selection
 end = Get end of selection

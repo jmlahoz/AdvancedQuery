@@ -20,7 +20,7 @@
 # This script gets the maximum amplitude value of a wave within a selection.
 # This is an Editor script.
 
-include utils.praat
+include auxiliary.praat
 
 ini = Get start of selection
 end = Get end of selection
