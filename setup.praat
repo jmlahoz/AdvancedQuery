@@ -29,8 +29,8 @@ Add menu command... "SoundEditor" "Query" "Get minimum" "Get maximum" 0 Get mini
 Add menu command... "TextGridEditor" "Query" "Get minimum" "Get maximum" 0 Get minimum.praat
 Add menu command... "SoundEditor" "Query" "Get RMS amplitude of selection" "" 0 Get RMS amplitude of selection.praat
 Add menu command... "TextGridEditor" "Query" "Get RMS amplitude of selection" "" 0 Get RMS amplitude of selection.praat
-Add menu command... "SoundEditor" "Formant" "Get formants (corrected)..." "" 0 Get formants (corrected).praat
-Add menu command... "TextGridEditor" "Formant" "Get formants (corrected)..." "" 0 Get formants (corrected).praat
+Add menu command... "SoundEditor" "Formant" "Get formant info..." "" 0 Get formant info.praat
+Add menu command... "TextGridEditor" "Formant" "Get formant info..." "" 0 Get formant info.praat
 Add menu command... "SoundEditor" "Pitch" "Get pitch range (st)" "" 0 Get pitch range (st).praat
 Add menu command... "TextGridEditor" "Pitch" "Get pitch range (st)" "" 0 Get pitch range (st).praat
 Add menu command... "Objects" "Praat" "Octave calculator..." "Goodies" 1 Octave calculator.praat
