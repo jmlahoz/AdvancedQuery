@@ -13,24 +13,34 @@
 # This file runs on Praat, a software developed by Paul Boersma
 # and David Weenink at University of Amsterdam.
 
-Add menu command... "SoundEditor" "Spectrum" "Get COG of selection" "View spectral slice" 0 Get COG of selection.praat
-Add menu command... "TextGridEditor" "Spectrum" "Get COG of selection" "" 0 Get COG of selection.praat
-Add menu command... "SoundEditor" "Spectrum" "Get spectral slope..." "" 0 Get spectral slope.praat
-Add menu command... "TextGridEditor" "Spectrum" "Get spectral slope..." "" 0 Get spectral slope.praat
-Add menu command... "SoundEditor" "Query" "Get cursor (min:sec)" "Get cursor" 0 Get cursor (min-sec).praat
-Add menu command... "TextGridEditor" "Query" "Get cursor (min:sec)" "Get cursor" 0 Get cursor (min-sec).praat
-Add menu command... "SoundEditor" "Query" "Get value at cursor" "Get selection length" 0 Get value at cursor.praat
-Add menu command... "TextGridEditor" "Query" "Get value at cursor" "Get selection length" 0 Get value at cursor.praat
-Add menu command... "SoundEditor" "Query" "Get maximum" "Get value at cursor" 0 Get maximum.praat
-Add menu command... "TextGridEditor" "Query" "Get maximum" "Get value at cursor" 0 Get maximum.praat
-Add menu command... "SoundEditor" "Query" "Get mean of selection" "Get minimum" 0 Get mean of selection.praat
-Add menu command... "TextGridEditor" "Query" "Get mean of selection" "Get minimum" 0 Get mean of selection.praat
-Add menu command... "SoundEditor" "Query" "Get minimum" "Get maximum" 0 Get minimum.praat
-Add menu command... "TextGridEditor" "Query" "Get minimum" "Get maximum" 0 Get minimum.praat
-Add menu command... "SoundEditor" "Query" "Get RMS amplitude of selection" "" 0 Get RMS amplitude of selection.praat
-Add menu command... "TextGridEditor" "Query" "Get RMS amplitude of selection" "" 0 Get RMS amplitude of selection.praat
-Add menu command... "SoundEditor" "Formant" "Get formant info..." "" 0 Get formant info.praat
-Add menu command... "TextGridEditor" "Formant" "Get formant info..." "" 0 Get formant info.praat
+if praatVersion >= 6215
+spectrum_menu$ = "Spectrogram"
+query_menu$ = "Time"
+formant_menu$ = "Formants"
+else
+spectrum_menu$ = "Spectrum"
+query_menu$ = "Query"
+formant_menu$ = "Formant"
+endif
+
+Add menu command... "SoundEditor" "'spectrum_menu$'" "Get COG of selection" "View spectral slice" 0 Get COG of selection.praat
+Add menu command... "TextGridEditor" "'spectrum_menu$'" "Get COG of selection" "" 0 Get COG of selection.praat
+Add menu command... "SoundEditor" "'spectrum_menu$'" "Get spectral slope..." "" 0 Get spectral slope.praat
+Add menu command... "TextGridEditor" "'spectrum_menu$'" "Get spectral slope..." "" 0 Get spectral slope.praat
+Add menu command... "SoundEditor" "'query_menu$'" "Get cursor (min:sec)" "Get cursor" 0 Get cursor (min-sec).praat
+Add menu command... "TextGridEditor" "'query_menu$'" "Get cursor (min:sec)" "Get cursor" 0 Get cursor (min-sec).praat
+Add menu command... "SoundEditor" "'query_menu$'" "Get value at cursor" "Get selection length" 0 Get value at cursor.praat
+Add menu command... "TextGridEditor" "'query_menu$'" "Get value at cursor" "Get selection length" 0 Get value at cursor.praat
+Add menu command... "SoundEditor" "'query_menu$'" "Get maximum" "Get value at cursor" 0 Get maximum.praat
+Add menu command... "TextGridEditor" "'query_menu$'" "Get maximum" "Get value at cursor" 0 Get maximum.praat
+Add menu command... "SoundEditor" "'query_menu$'" "Get mean of selection" "Get minimum" 0 Get mean of selection.praat
+Add menu command... "TextGridEditor" "'query_menu$'" "Get mean of selection" "Get minimum" 0 Get mean of selection.praat
+Add menu command... "SoundEditor" "'query_menu$'" "Get minimum" "Get maximum" 0 Get minimum.praat
+Add menu command... "TextGridEditor" "'query_menu$'" "Get minimum" "Get maximum" 0 Get minimum.praat
+Add menu command... "SoundEditor" "'query_menu$'" "Get RMS amplitude of selection" "" 0 Get RMS amplitude of selection.praat
+Add menu command... "TextGridEditor" "'query_menu$'" "Get RMS amplitude of selection" "" 0 Get RMS amplitude of selection.praat
+Add menu command... "SoundEditor" "'formant_menu$'" "Get formant info..." "" 0 Get formant info.praat
+Add menu command... "TextGridEditor" "'formant_menu$'" "Get formant info..." "" 0 Get formant info.praat
 Add menu command... "SoundEditor" "Pitch" "Get pitch range (st)" "" 0 Get pitch range (st).praat
 Add menu command... "TextGridEditor" "Pitch" "Get pitch range (st)" "" 0 Get pitch range (st).praat
 Add menu command... "Objects" "Praat" "Octave calculator..." "Goodies" 1 Octave calculator.praat
